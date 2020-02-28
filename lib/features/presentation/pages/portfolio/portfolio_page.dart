@@ -40,6 +40,7 @@ class _PortfolioPageState extends State<PortfolioPage>
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
+            PortfolioSliverAppBar(_pages[_tabController.index].item1),
             SliverPersistentHeader(
               delegate: SliverPersistentHeaderDelegateImpl(
                 tabBar: TabBar(
